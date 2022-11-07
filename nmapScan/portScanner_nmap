@@ -1,0 +1,26 @@
+#! /bin/bash
+
+# Basic nmap port scanner
+
+# Creating a propmt for the user
+
+echo "Enter starting IP address : "
+
+read firstIP
+
+echo "Enter last octet IP address : "
+
+read lastOctetIP
+
+echo "Enter the port you want to scan for : "
+
+read port
+
+nmap -sT $firstIP-$lastOctetIP -p $port >/dev/null -oG MyScan
+
+# Storing the results of the scan in a file titled MyScan
+# using >/dev/null and grep
+
+cat MyScan | grep open > MyScan
+
+cat MyScan
