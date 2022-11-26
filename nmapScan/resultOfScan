@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sun Nov  6 13:11:49 2022 as: nmap -sT -p 3306 -oG MySQLscan 172.16.22.2-138
-Host: 172.16.22.2 ()	Status: Up
-Host: 172.16.22.2 ()	Ports: 3306/closed/tcp//mysql///
-Host: 172.16.22.137 ()	Status: Up
-Host: 172.16.22.137 ()	Ports: 3306/closed/tcp//mysql///
+# Nmap 7.92 scan initiated Sun Nov  6 13:11:49 2022 as: nmap -sT -p <port> -oG MySQLscan <targetIP>
+Host: <targetIP> ()	Status: Up
+Host: <targetIP> ()	Ports: <port>/closed/tcp//mysql///
+Host: <targetIP> ()	Status: Up
+Host: <targetIP> ()	Ports: <port>/closed/tcp//mysql///
 # Nmap done at Sun Nov  6 13:11:55 2022 -- 137 IP addresses (2 hosts up) scanned in 6.34 seconds
